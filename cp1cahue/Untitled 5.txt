@@ -1,0 +1,22 @@
+public class RollTheDice {
+    
+    public static void main(String[] args) {
+    	Scanner kin = new Scanner(System.in);
+        
+	int d1;   
+        int d2;   
+        int total;   
+        
+        d1 = (int)(Math.random()*6) + 1;
+        d2 = (int)(Math.random()*6) + 1;
+        total = d1 + d2;
+        
+        System.out.print("Die1: " + d1 + ", ");
+        System.out.print("Die2: " + d2 + ", ");
+        System.out.print("sum of two dice: " + total);
+
+	System.out.println("Would you like to roll again? ("y/n"));
+	int roll = kin.nextInt();
+
+	
+	if (roll == y){ 
